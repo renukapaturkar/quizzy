@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.15.0",
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -12,6 +13,8 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-react-app": "^6.0.0",
     "history": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

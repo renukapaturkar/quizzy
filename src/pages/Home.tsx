@@ -6,7 +6,7 @@ export function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-evenly">
         <QuizBox {...QuizOne} />
         <QuizBox {...QuizTwo} />
       </div>

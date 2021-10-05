@@ -6,12 +6,12 @@ export const QuizBox = ({ quizName, id }: Quiz) => {
 
   return (
     <>
-      <div className="flex flex-col w-6/12 h-auto p-8 font-mono">
-        <div className="flex flex-col w-9/12 h-96 p-8 m-4 self-center border shadow-lg">
+
+        <div className="flex flex-col w-full md:max-w-xl h-96 p-8 m-4 self-center border shadow-lg">
           <h1 className="text-3xl text-center font-semibold text-gray-800">
             {quizName}
           </h1>
-          <div className="text-2xl text-center font-normal p-8 text-gray-800">
+          <div className="text-2xl md:text-xl text-center font-normal p-8 text-gray-800">
             8 Questions
           </div>
 
@@ -22,7 +22,7 @@ export const QuizBox = ({ quizName, id }: Quiz) => {
             Start Quiz
           </button>
         </div>
-      </div>
+
     </>
   );
 };

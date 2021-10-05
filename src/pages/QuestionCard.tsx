@@ -84,8 +84,8 @@ export const QuestionCard = () => {
     return (
       <>
         <Navbar />
-        <div className="flex flex-col w-full h-auto p-8 font-mono">
-          <div className="flex flex-col w-9/12 h-96 p-8 m-4 self-center border shadow-lg">
+        
+          <div className="flex flex-col w-full md:max-w-lg h-96 p-8 self-center border shadow-lg">
             <h1 className="text-3xl text-center font-bold text-blue-800">
               Result
             </h1>
@@ -95,7 +95,7 @@ export const QuestionCard = () => {
 
             <Link
               to="/scoreboard"
-              className="bg-blue-900 p-4 w-1/4 text-xl text-white font-medium border rounded-lg self-center text-center hover:bg-blue-700"
+              className="bg-blue-900 p-4 w-full text-xl text-white font-medium border rounded-lg self-center text-center hover:bg-blue-700"
             >
               Scoreboard
             </Link>
@@ -129,7 +129,7 @@ export const QuestionCard = () => {
               </div>
             )}
           </div>
-        </div>
+        
       </>
     );
   };
@@ -139,8 +139,8 @@ export const QuestionCard = () => {
       {currentQuestion >= 8 ? (
         <Results />
       ) : (
-        <div className="flex flex-col p-8  font-mono">
-          <div className="flex flex-col w-3/6 h-auto p-8 self-center border shadow-lg">
+        
+          <div className="flex flex-col w-full md:max-w-lg h-auto p-8 self-center border shadow-lg">
             <div className="text-2xl text-right font-semibold p-8 text-blue-900">
               Score: {score}
             </div>
@@ -156,7 +156,7 @@ export const QuestionCard = () => {
                 <button
                   disabled={disable}
                   value={option.text}
-                  className={`p-4 w-4/5 text-2xl m-2 font-normal border rounded-lg self-center shadow-md 
+                  className={`p-4 w-full md:max-w-lg text-2xl m-2 font-normal border rounded-lg self-center shadow-md 
                       ${colorHandler(option.isRight)}`}
                   onClick={() => ScoreHandler(option.isRight)}
                 >
@@ -177,7 +177,7 @@ export const QuestionCard = () => {
               </button>
             </div>
           </div>
-        </div>
+      
       )}
     </>
   );
